@@ -1,27 +1,55 @@
-# JEST Unit Tests
+# Gerenciador de Tarefas
 
-## GitHub Actions
+## Descrição
+O Gerenciador de Tarefas é um módulo para gerenciamento de tarefas, permitindo adicionar, atualizar, remover e listar tarefas, bem como manipular tags, prioridades e status das tarefas. Este projeto inclui testes unitários para garantir o funcionamento correto de cada funcionalidade.
 
-[![Build and Tests](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/ugioni/unit-tests-jest/actions/workflows/node.js.yml)
+## Funcionalidades
+Adicionar, remover e atualizar tarefas.
+Marcar tarefas como concluídas e reabrir tarefas.
+Listar tarefas por prioridade, data e status (concluídas ou pendentes).
+Contar tarefas com base em prioridade.
+Adicionar e remover tags das tarefas.
+Listar tarefas por tag.
+Ordenar tarefas por data e prioridade.
+Instalação
+Certifique-se de ter o Node.js e npm instalados. Então, siga os passos abaixo:
 
-## SonarCloud
+## Clone o repositório:
+git clone <URL_DO_REPOSITORIO>
 
-[![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=ugioni_unit-tests-jest&metric=alert_status)](https://sonarcloud.io/summary/new_code?id=ugioni_unit-tests-jest)
+## Navegue até o diretório do projeto:
+cd <DIRETORIO_DO_PROJETO>
 
-## Getting Started
+## Instale as dependências:
+npm install
 
-In order to execute this project you must follow the steps below:
+## Testes
+Os testes são escritos utilizando o framework Jest. Para rodar os testes, execute o seguinte comando:
+npm test
 
-1. Install [Node JS](https://nodejs.org/) (version >= 18.x)
-1. Run `npm install` to install all the project dependencies
-1. Run `npm run test` to execute the entire test suite
-1. Run `npm run coverage` to execute the entire test suite with coverage
 
-All execution artifacts can be found in `./coverage`, if you want to remove these files run `npm run clean`.
+## Casos de Teste
+## Aqui está uma visão geral dos testes implementados:
 
-## Project Structure
-</br>
-<ul>
-    <li>src: source code</li>
-    <li>test: unit test files</li>
-</ul>
+Adicionar Tarefa Válida: Verifica se uma tarefa é adicionada corretamente.
+Remover Tarefa: Verifica se uma tarefa pode ser removida.
+Buscar Tarefa por ID: Verifica se é possível buscar uma tarefa pelo seu ID.
+Atualizar Tarefa: Testa a atualização das informações de uma tarefa existente.
+Listar Tarefas: Verifica a listagem de todas as tarefas.
+Contar Tarefas: Verifica a contagem total de tarefas.
+Marcar Tarefa como Concluída: Testa se uma tarefa pode ser marcada como concluída.
+Listar Tarefas Concluídas: Verifica a listagem das tarefas concluídas.
+Listar Tarefas Pendentes: Verifica a listagem das tarefas pendentes.
+Remover Tarefas Concluídas: Testa a remoção de todas as tarefas concluídas.
+Buscar Tarefa por Descrição: Verifica a busca de tarefas por sua descrição.
+Adicionar Tag a Tarefa: Testa a adição de uma tag a uma tarefa.
+Remover Tag da Tarefa: Testa a remoção de uma tag de uma tarefa.
+Listar Tarefas por Tag: Verifica a listagem de tarefas com base em uma tag específica.
+Buscar Tarefas por Data: Verifica a busca de tarefas por data.
+Atualizar Prioridade da Tarefa: Testa a atualização da prioridade de uma tarefa.
+Listar Tarefa por Prioridade: Verifica a listagem de tarefas por prioridade.
+Contar Tarefas por Prioridade: Verifica a contagem de tarefas com base em sua prioridade.
+Marcar Todas as Tarefas como Concluídas: Testa se todas as tarefas podem ser marcadas como concluídas.
+Reabrir Tarefa: Testa a reabertura de uma tarefa concluída.
+Ordenar Tarefas por Data: Verifica a ordenação das tarefas por data.
+Ordenar Tarefas por Prioridade: Verifica a ordenação das tarefas por prioridade.

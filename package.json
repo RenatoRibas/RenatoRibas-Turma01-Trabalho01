@@ -13,7 +13,7 @@
   "scripts": {
     "dev": "comando_para_executar",
     "clean": "rimraf ./coverage && mkdirp ./coverage",
-    "test": "npm run clean && jest",
+    "test": "npm run clean && jest Trabalho01Turma01.test.js",
     "coverage": "npm run clean && jest --coverage"
   },
   "jest": {
